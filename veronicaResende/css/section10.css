@@ -1,0 +1,63 @@
+.section_10_holder {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.default_header_section_10 {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.section_10_itens_holder {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.single_item_section_10_item {
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--default_dark_green_color);
+    cursor: pointer;
+}
+.header_item_section_10{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.header_item_section_10 h1 {
+    font-size: 25px;
+    color: var(--default_dark_green_color);
+    margin: 0;
+}
+.header_item_section_10 img{
+    height: 20px;
+    transition: all 0.5s ease;
+}
+
+.content_item_section_10 {
+    font-size: 20px;
+    padding-top: 8px;
+    color: var(--default_medium_green_color);
+    font-weight: normal;
+    margin: 0;
+    height: 2.5em; /* Ajuste com base na altura da linha */
+    overflow: hidden;
+    transition: all 0.5s ease;
+    white-space: nowrap; /* Impede a quebra de linha */
+    text-overflow: ellipsis; /* Adiciona reticências se o texto exceder */
+}
+
+.content_item_section_10.open {
+    height: auto; /* Altura necessária para mostrar todo o conteúdo */
+    white-space: normal; /* Permite a quebra de linha normal */
+  }
+
+@media (min-width: 900px) {
+    .default_header_section_10 {
+        text-align: left;
+    }
+}

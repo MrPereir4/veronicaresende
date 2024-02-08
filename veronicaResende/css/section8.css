@@ -1,0 +1,103 @@
+.subheader_section_8 {
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: var(--default_medium_green_color);
+    margin: 0;
+}
+
+.section_8_holder {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.horizontal_block_holder_section8 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    gap: 64px;
+    margin-top: 64px;
+}
+
+.full_block_holder_section_8 {
+    flex: 1;
+    align-items: stretch;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.single_block_holder {
+    padding: 32px 16px;
+    height: 100%;
+}
+
+.single_block_holder ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.single_block_holder ul li{
+    font-size:20px;
+    color: white;
+}
+
+
+.single_block_holder ul li:first-child {
+    font-weight: 900;
+}
+
+.single_block_holder ul li:last-child {
+    padding-top: 32px;
+}
+
+
+.full_block_holder_section_8 a {
+    margin-top: 32px;
+}
+
+.full_block_holder_section_8 a div {
+    padding: 16px 0px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dark_button_section_8_holder{
+    color: var(--default_medium_dark_green_color);
+    border: 1px solid var(--default_medium_dark_green_color);
+    transition: all ease-in-out .2s;
+}
+
+.dark_button_section_8_holder:hover {
+    background-color: var(--default_medium_dark_green_color);
+    color: var(--default_green_color);
+}
+
+.light_button_section_8_holder{
+    color: var(--default_medium_green_color);
+    border: 1px solid var(--default_medium_green_color);
+    transition: all ease-in-out .2s;
+}
+
+.light_button_section_8_holder:hover {
+    background-color: var(--default_medium_green_color);
+    color: var(--default_green_color);
+}
+
+@media (min-width: 900px) {
+    .full_block_holder_section_8 a div {
+        max-width: 160px;
+    }
+
+    .horizontal_block_holder_section8 {
+        flex-direction: row;
+        margin-top: 32px;
+    }
+}

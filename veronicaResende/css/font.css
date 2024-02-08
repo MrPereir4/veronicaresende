@@ -1,0 +1,39 @@
+/* Regular */
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(../fonte/CabinetGrotesk-Regular.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Regular Light */
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(../fonte/CabinetGrotesk-Light.otf) format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(../fonte/CabinetGrotesk-Medium.otf) format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Semibold */
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(../fonte/CabinetGrotesk-Semibold.otf) format('opentype');
+    font-weight: 600; /* ou 700, dependendo da aparência desejada */
+    font-style: normal;
+}
+
+/* Bold */
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(../fonte/CabinetGrotesk-Bold.otf) format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}

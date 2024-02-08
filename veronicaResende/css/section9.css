@@ -1,0 +1,121 @@
+.remove_section_padding {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.section_9_holder {
+    width: 100%;
+    padding: 280px 0 0 0;
+    position: relative;
+}
+
+.section_9_background_holder {
+    width: 100%;
+    background-color: var(--default_medium_green_color);
+    padding: 240px 3% 60px 3%;
+}
+.section_9_item{
+    text-align: center;
+}
+.section_9_item h1{
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    color: var(--default_dark_green_color);
+}
+
+.section_9_item a div{
+    border: 1px solid var(--default_dark_green_color);
+    width: 100%;
+    max-width: auto;
+    padding: 8px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--default_dark_green_color);
+    transition: all ease-in 0.1s;
+    margin:  16px auto 0 auto;
+}
+
+.section_9_item a div:hover {
+    border: 1px solid var(--default_green_color);
+    background-color: var(--default_green_color);
+    color: var(--default_medium_green_color);
+}
+
+.section_9_item a div img{
+    height: 20px;
+    padding-right: 8px;
+}
+
+.section_9_item p{
+    font-size: 20px;
+    color: var(--default_green_color);
+    margin-top: 32px;
+}
+
+.section_9_content_holder {
+    width: 100%;
+    max-width: 1440px;
+    padding-right: 0%;
+    margin: 0 auto;
+}
+
+.image_map_section_9 {
+    position: absolute;
+    right: 10%; 
+    top: 0;
+    display: none;
+}
+
+.map_view_mobile {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 50px;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media (min-width: 1500px) {
+    .section_9_item{
+        text-align: left;
+    }
+    .image_map_section_9 {
+        display: block;
+    }
+
+    .section_9_content_holder {
+        padding-right: 40%;
+    }
+
+    .section_9_item a div{
+        margin:  16px 0 0 0;
+    }
+
+    .section_9_holder {
+        padding: 90px 0;
+    }
+
+    .map_view_mobile {
+        display: none;
+    }
+
+    .section_9_background_holder {
+        width: 100%;
+        background-color: var(--default_medium_green_color);
+        padding: 60px 3%;
+    }
+}
+
+@media (min-width: 900px) {
+
+    
+    
+    .section_9_item a div{
+        max-width: 300px;
+    }
+}
