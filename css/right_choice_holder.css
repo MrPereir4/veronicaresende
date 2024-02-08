@@ -1,0 +1,37 @@
+.right_choice_holder {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 3%;
+}
+
+.right_choice_holder div {
+    width: 100%;
+    max-width: 350px;
+    background-color: var(--default_green_color);
+    padding: 5px 5px;
+    margin: 0 auto;
+}
+
+
+.right_choice_holder div h1 {
+    font-size: 30px;
+    font-weight: 900;
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.ul_right_choice {
+    padding: 32px 0 0 0;
+}
+
+.ul_right_choice li{
+    padding-bottom: 16px;
+}
+
+@media (min-width: 900px) {
+    .right_choice_holder div {
+        margin: 0;
+    }
+}

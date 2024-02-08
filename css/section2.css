@@ -1,0 +1,86 @@
+.services_by_ver {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    max-width: 450px;
+    margin: 0 auto;
+    color: var(--default_medium_green_color);
+}
+
+.services_holder_flex {
+    width: 100%;
+    max-width: 1440px;
+    padding: 32px 3% 0 3%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.services_vertical_holder{
+    flex: 1;
+}
+.services_vertical_holder:nth-child(1) {
+    margin-right: 0px;
+}
+
+.services_vertical_holder:nth-child(2) {
+    margin-left: 0px;
+}
+
+.services_vertical_holder ul{
+    color: var(--default_medium_green_color);
+    font-size: 20px;
+}
+.services_vertical_holder ul li {
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.services_vertical_holder ul li:last-child {
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+
+.services_vertical_holder {
+    margin-top: -16px;
+}
+
+.wpp_button_contact {
+    background-color: var(--default_green_color);
+    flex: 0 0 auto; /* Não cresce, não encolhe, baseado no conteúdo */
+    margin: 0 auto; /* Isso centralizará a div se a largura for menor que 100% */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+    cursor: pointer;
+    color: var(--default_dark_green_color);
+}
+
+.wpp_button_contact img{
+    height: 20px;
+    padding-right: 8px;
+}
+
+@media (min-width: 900px) {
+    .services_holder_flex {
+        flex-direction: row;
+    }
+
+    .services_vertical_holder:nth-child(1) {
+        margin-right: 32px;
+    }
+    
+    .services_vertical_holder:nth-child(2) {
+        margin-left: 32px;
+    }
+
+    .services_vertical_holder {
+        margin-top: 0px;
+    }
+
+    .wpp_button_contact {
+        width: 500px;
+    }
+}
