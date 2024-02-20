@@ -44,6 +44,10 @@ footer {
     padding: 0;
 }
 
+.contact_footer ul li:first-child{
+    color: white;
+}
+
 .spacing_footer {
     flex: 1;
     display: flex;

@@ -5,7 +5,7 @@
     background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: right center; /* Mantém o lado direito da imagem fixo e centraliza verticalmente */
-    background-attachment: fixed;
+    background-attachment: local;
 }
 
 .section_5_text_holder {
@@ -58,8 +58,8 @@
 
 .dra_veronica_holder li:first-child {
     font-size: 30px;
-    font-weight: 900;
     width: 100%;
+    font-weight: 900;
     text-align: center;
     color: var(--default_medium_dark_green_color);
     padding-top: 32px;
@@ -68,6 +68,7 @@
 
 .dra_veronica_holder li:last-child {
     font-size: 20px;
+    text-align: center;
     color: var(--default_medium_dark_green_color);
 }
 

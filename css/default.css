@@ -3,6 +3,7 @@
     --default_dark_green_color: rgb(8, 28, 21);
     --default_medium_green_color: rgb(63, 145, 108);
     --default_medium_dark_green_color: rgb(28, 67, 50);
+    --default_extreme_dark_green_color: rgb(1, 22, 13);
 }
 
 html {
@@ -133,6 +134,13 @@ section {
     padding: 0;
 }
 
+.wpp_a {
+    width: 100%;
+    max-width: 300px;
+}
+
+
+
 .wpp_button_small {
     width: 100%;
     max-width: 300px;
@@ -146,6 +154,17 @@ section {
     cursor: pointer;
     color: var(--default_dark_green_color);
     margin: 32px  auto 0 auto;
+    border-radius: 6px;
+}
+
+.dark_wpp:hover {
+    background-color: var(--default_medium_green_color);
+    color: var(--default_green_color);
+}
+
+.medium_wpp:hover {
+    background-color: var(--default_dark_green_color);
+    color: var(--default_green_color);
 }
 
 .wpp_button_small img {

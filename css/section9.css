@@ -37,6 +37,7 @@
     color: var(--default_dark_green_color);
     transition: all ease-in 0.1s;
     margin:  16px auto 0 auto;
+    border-radius: 6px;
 }
 
 .section_9_item a div:hover {
@@ -83,9 +84,15 @@
 @media (min-width: 1500px) {
     .section_9_item{
         text-align: left;
+        padding: 50px 0;
     }
     .image_map_section_9 {
         display: block;
+        max-width: 650px;
+    }
+
+    .image_map_section_9 img{
+        width: 100%;
     }
 
     .section_9_content_holder {

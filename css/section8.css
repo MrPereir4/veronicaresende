@@ -33,6 +33,7 @@
 .single_block_holder {
     padding: 32px 16px;
     height: 100%;
+    border-radius: 12px;
 }
 
 .single_block_holder ul {
@@ -44,6 +45,15 @@
 .single_block_holder ul li{
     font-size:20px;
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.single_block_holder ul li img{
+ height: 35px;
+ padding-left: 8px;
 }
 
 
@@ -67,6 +77,9 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    border-radius: 6px;
+    max-width: 150px;
+    margin: 0 auto;
 }
 
 .dark_button_section_8_holder{
@@ -94,6 +107,11 @@
 @media (min-width: 900px) {
     .full_block_holder_section_8 a div {
         max-width: 160px;
+        margin: 0;
+    }
+
+    .single_block_holder ul li{
+        justify-content: flex-start;
     }
 
     .horizontal_block_holder_section8 {

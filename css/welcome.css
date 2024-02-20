@@ -2,12 +2,12 @@
 
 .welcome_main_background {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     
     background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
     background-repeat: no-repeat; /* Evita que a imagem se repita */
     background-position: right center; /* Mantém o lado direito da imagem fixo e centraliza verticalmente */
-    background-attachment: fixed;
+    background-attachment:local;
     z-index: 1;
 }
 
@@ -16,7 +16,7 @@
 }
 
 .page2_bg {
-    background-image: url("../images/servico.png");
+    background-image: url("../images/servicos.png");
 }
 
 .page3_bg {
@@ -27,9 +27,9 @@
 .welcome_text_holder {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     position: relative;
-    top: 50%;
+    top: 70%;
     max-width: 1440px;
     transform: translateY(-50%);
     margin: 0 auto;
@@ -42,7 +42,7 @@
 }
 
 .welcome_text_holder ul li {
-    text-align: center;
+    text-align: left;
 }
 
 .welcome_text_holder ul li:first-child {
@@ -65,28 +65,21 @@
     padding: 10px 0;
     width: 300px;
     cursor: pointer;
-    margin: 0 auto;
+    margin: 0;
+    border-radius: 5px;
+    color: var(--default_dark_green_color);
+    transition: all 0.1s ease-in-out;
+}
+
+.contact_whatsapp_button:hover{
+    color: var(--default_green_color);
+    background-color: var(--default_medium_green_color);
 }
 
 .contact_whatsapp_button img {
     height: 20px;
     margin-right: 8px;
 }
-
-.contact_whatsapp_button span {
-   color: var(--default_dark_green_color);
-}
-
-
-
-
-
-
-
-
-
-
-
 
 .welc_bottom_holder {
     width: 100%;
@@ -102,7 +95,7 @@
     max-width: 1440px;
     display: flex;
     margin: 0 auto;
-    padding: 0 3%;
+    padding: 0;
 }
 
 .horizontal_welc_holder {
@@ -120,9 +113,10 @@
     flex-direction: column;
     flex: 1;
     position: relative;
-    align-items: center;/**/
+    width: 100%;
+    align-items: flex-start;/**/
     justify-content: center;/**/
-    text-align: center;/**/
+    text-align: left;/**/
 }
 
 .welc_img_icon {
@@ -150,7 +144,7 @@
 .welc_paragraph p {
     font-size: 16px;
 } 
-
+s
 
 .welc_vertical_holder:first-child {
     margin-right: 0px;
@@ -160,14 +154,11 @@
     margin-right: 0px;
 }
 
-.welc_vertical_holder:last-child {
-    margin-left: 0px;
-}
 
 /*Services page*/
 
 .horizontal_item {
-    padding: 60px 0;
+    padding: 0px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -191,13 +182,90 @@
 }
 
 .horizontal_item h1 {
-    font-weight: bold;
+    font-weight: 400;
     font-size: 30px;
+}
+
+.horizontal_item {
+    position: relative;
+    cursor: pointer; /* Para indicar que é clicável */
+}
+
+.horizontal_item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--default_green_color); /* Substitua pela cor desejada */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.horizontal_item:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.horizontal_item.selected::after {
+    transform: scaleX(1); /* Garante que o traço é sempre visível */
+    height: 4px; /* Torna o traço mais grosso */
+    background-color: var(--default_green_color); /* Ou qualquer cor que você queira para o item selecionado */
+}
+
+.fixed-top {
+    position: fixed !important;
+    top: 130px !important; /* Altura da barra fixa que você já tem */
+    width: 100% !important;
+    z-index: 999 !important; /* Garante que fique acima de outros conteúdos */
+    /* Adicione outros estilos conforme necessário, como sombra, para indicar que está fixado */
+    background-color: rgba(8, 28, 21, 1 ) !important ;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1)!important;
+    bottom: auto !important;
+}
+
+.fixed-top-mobile{
+    position: fixed !important;
+    top: 100px !important; /* Altura da barra fixa que você já tem */
+    width: 100% !important;
+    z-index: 999 !important; /* Garante que fique acima de outros conteúdos */
+    /* Adicione outros estilos conforme necessário, como sombra, para indicar que está fixado */
+    background-color: rgba(8, 28, 21, 1 ) !important ;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.1)!important;
+    bottom: auto !important;
+}
+
+.flex_opt_holder_menu {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: var(--default_green_color);
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(8, 28, 21, 1 );
+    padding: 3% 16px;
+    position: fixed;
+    top: -100px;
+    transition: all 0.2s ease-in;
+    z-index: 9999;
+}
+
+.flex_opt_holder_menu .horizontal_item h1 {
+    font-size: 16px !important;
+    margin: 20px 0 !important;
 }
 
 @media (min-width: 900px) {
 
+    .welcome_main_background {
+        height: 100vh;
+        background-attachment: fixed;
+    }
+
     .welcome_text_holder {
+        top: 50%;
         justify-content: flex-start;
     }
     
@@ -209,64 +277,66 @@
         margin: 0;
     }
 
+    .welc_bottom_holder {
+        background-color: rgba(8, 28, 21, 0.8 ) ;
+        position: absolute;
+        bottom: 0;
+    }
+
+    .horizontal_welc_holder {
+        flex-direction: row;
+        align-items:flex-start;
+    }
+
+    .welc_vertical_holder {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        text-align: left;
+    }
+
+    .welc_img_icon {
+        width: 100%;
+    }
+
+    .welc_title {
+        height: 120px;
+    }
+
+    .welcome_text_holder {
+        transform: translateY(-100%);
+    }
+
+    .welc_vertical_holder:first-child {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
 
 
+    .welc_vertical_holder:nth-child(2) {
+        margin-right: 16px;
+        margin-bottom: 0;
+    }
 
+    .welc_vertical_holder:last-child {
+        margin-left: 16px;
+    }
 
+    /* Borda à esquerda no segundo item */
+    .welc_vertical_holder:nth-of-type(2)::before {
+        visibility: visible;
+    }
 
-
-
-.welc_bottom_holder {
-    background-color: rgba(8, 28, 21, 0.8 ) ;
-    position: absolute;
-    bottom: 0;
+    /* Borda à direita no segundo item */
+    .welc_vertical_holder:nth-of-type(2)::after {
+        visibility: visible;
+        margin-right: 16px;
+    }
+    
 }
 
-.horizontal_welc_holder {
-    flex-direction: row;
-    align-items:flex-start;
-}
-
-.welc_vertical_holder {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    text-align: left;
-}
-
-.welc_img_icon {
-    width: 100%;
-}
-
-.welc_title {
-    height: 60px;
-}
-
-.welc_vertical_holder:first-child {
-    margin-right: 16px;
-    margin-bottom: 0;
-}
-
-
-.welc_vertical_holder:nth-child(2) {
-    margin-right: 16px;
-    margin-bottom: 0;
-}
-
-.welc_vertical_holder:last-child {
-    margin-left: 16px;
-}
-
-/* Borda à esquerda no segundo item */
-.welc_vertical_holder:nth-of-type(2)::before {
-    visibility: visible;
-}
-
-/* Borda à direita no segundo item */
-.welc_vertical_holder:nth-of-type(2)::after {
-    visibility: visible;
-    margin-right: 16px;
-}
-
-
+@media (min-width: 1042px) {
+    .welc_title {
+        height: 60px;
+    }
 }

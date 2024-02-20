@@ -31,5 +31,5 @@ function atualizarConteudo(texto, imagemSrc) {
 
         elementoTexto.classList.add("mostrar");
         elementoImagem.classList.add("mostrar");
-    }, 500);
+    }, 0);
 }

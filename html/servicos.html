@@ -37,7 +37,7 @@
                         <a class="btns_a" href="../index.html#banner_somos">Quem somos</a>
                         <a class="btns_a" href="../index.html#area_atuacao">Áreas de atuação</a>
                         <a class="btns_a" href="../index.html#duvidas_frequentes_id">Dúvidas frequentes</a>
-                        <a class="btns_a" href="./contato.html">Contato</a>
+                        <a class="btns_a" href="../index.html#contactId">Contato</a>
                     </div>
                     <div class="header-right">
                         <a href="https://www.instagram.com/veronicaresende.adv/"><img src="../images/insta.png" alt="Instagram"></a>
@@ -48,7 +48,7 @@
                 </div>
     
                 <div class="hamb_header">
-                    <img src="../images/LOGO_VR_V2_VE.png" alt="Logo" class="logo">
+                    <img src="../images/logo-veronica.png" alt="Logo" class="logo">
                     <div class="hamburguer-bt">
                         <div class="hamburguer-bt__stripe hamburguer-bt__stripe__top"></div>
                         <div class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"></div>
@@ -63,7 +63,7 @@
                         <a class="btns_a" href="../index.html#banner_somos"><li>Quem somos</li></a>
                         <a class="btns_a" href="../index.html#area_atuacao"><li>Áreas de atuação</li></a>
                         <a class="btns_a" href="../index.html#duvidas_frequentes_id"><li>Dúvidas frequentes</li></a>
-                        <a class="btns_a" href="./contato.html"><li>Contato</li></a>
+                        <a class="btns_a" href="../index.html#contactId"><li>Contato</li></a>
                     </ul>
         
                     <div class="header_social_media_mobile">
@@ -98,40 +98,41 @@
         <div class="welc_bottom_holder desktop_view">
             <div class="welc_aligner">
                 <div class="horizontal_welc_holder">
-                    <div class="horizontal_item" onclick="showSection('sectionCivil')">
-                        <img src="../images/civil.png" alt="">
-                        <h1>Civil</h1>
-                    </div>
-
-                    <div class="horizontal_item" onclick="showSection('sectionTributary')">
+                    <div class="horizontal_item sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
                         <img src="../images/tributario.png" alt="">
                         <h1>Tributário</h1>
                     </div>
 
-                    <div class="horizontal_item" onclick="showSection('sectionLabor')">
+                    <div class="horizontal_item civilClass sectionCivilClass" id="sectionCivilButton" onclick="showSection('sectionCivil')">
+                        <img src="../images/civil.png" alt="">
+                        <h1>Civil</h1>
+                    </div>
+
+                    <div class="horizontal_item laborClass sectionLaborClass" id="sectionLaborButton" onclick="showSection('sectionLabor')">
                         <img src="../images/trabalhista.png" alt="">
                         <h1>Trabalhista</h1>
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
 
      <!--Bottom welcome mobile-->
-     <div class="welc_bottom_holder mobile_view">
+     <div class="welc_bottom_holder mobile_welc_holder mobile_view">
         <div class="welc_aligner">
-            <div class="horizontal_welc_holder">
-                <div class="horizontal_item">
-                    <img src="../images/civil.png" alt="">
-                    <h1>Civil</h1>
-                </div>
-
-                <div class="horizontal_item">
+            <div class="horizontal_welc_holder" >
+                <div class="horizontal_item sectionTributaryClass" onclick="showSection('sectionTributary')">
                     <img src="../images/tributario.png" alt="">
                     <h1>Tributário</h1>
                 </div>
 
-                <div class="horizontal_item">
+                <div class="horizontal_item sectionCivilClass" onclick="showSection('sectionCivil')">
+                    <img src="../images/civil.png" alt="">
+                    <h1>Civil</h1>
+                </div>
+
+                <div class="horizontal_item sectionLaborClass" onclick="showSection('sectionLabor')">
                     <img src="../images/trabalhista.png" alt="">
                     <h1>Trabalhista</h1>
                 </div>
@@ -139,9 +140,27 @@
         </div>
     </div>
 
+    <div class="menu_opts_horizontal mobile_view">
+        <div class="flex_opt_holder_menu">
+            <div class="horizontal_item tribClass sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
+                <img src="../images/tributario.png" alt="">
+                <h1>Tributário</h1>
+            </div>
+
+            <div class="horizontal_item civilClass sectionCivilClass" id="sectionCivilButton" onclick="showSection('sectionCivil')">
+                <img src="../images/civil.png" alt="">
+                <h1>Civil</h1>
+            </div>
+
+            <div class="horizontal_item sectionLaborClass laborClass" id="sectionLaborButton" onclick="showSection('sectionLabor')">
+                <img src="../images/trabalhista.png" alt="">
+                <h1>Trabalhista</h1>
+            </div>
+        </div>
+    </div>
 
     <!--Section 2 Services-->
-    <section  id="sectionCivil" class="dark_green_background text_color_green top_section_services_spacing">
+    <section  id="sectionCivil" class="dark_medium_green_background text_color_green top_section_services_spacing">
         <div class="section_2_service_holder">
             <div class="header_with_icon" data-aos="fade-up"><img src="../images/civil.png" alt=""> <h1>Civil</h1></div>
 
@@ -169,12 +188,12 @@
                 </ul>
             </div>
 
-            <a href=""><div class="wpp_button_small"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
+            <a class="wpp_a" href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small medium_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
         </div>
     </section>
 
     <!--Section 3-->
-    <section id="sectionTributary" class="dark_medium_green_background text_color_green top_section_services_spacing">
+    <section id="sectionTributary" class="dark_green_background text_color_green  top_section_services_spacing">
         <div class="section_2_service_holder">
             <div class="header_with_icon" data-aos="fade-up"><img src="../images/tributario.png" alt=""> <h1>Tributário</h1></div>
 
@@ -196,7 +215,7 @@
                 </ul>
             </div>
 
-            <a href=""><div class="wpp_button_small"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
+            <a class="wpp_a " href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small dark_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
         </div>
     </section>
 
@@ -221,7 +240,7 @@
                 </ul>
             </div>
 
-            <a href=""><div class="wpp_button_small"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
+            <a class="wpp_a" href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small dark_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
         </div>
     </section>
 
@@ -274,37 +293,9 @@
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 <script src="../javascript/hamb.js"></script>
 <script src="../javascript/opacity_header.js"></script>
+<script src="../javascript/present_ever.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    window.onload = function() {
-        // Esconde todas as seções por padrão
-        hideAllSections();
-    
-        // Obtém os parâmetros da URL
-        const urlParams = new URLSearchParams(window.location.search);
-        const section = urlParams.get('section'); // 'section' é o nome do parâmetro na URL
-    
-        // Se o parâmetro corresponder a uma seção existente, mostra essa seção
-        if (section && document.getElementById(section)) {
-            document.getElementById(section).style.display = 'block';
-        }
-    };
-    
-    function hideAllSections() {
-        document.getElementById('sectionCivil').style.display = 'none';
-        document.getElementById('sectionTributary').style.display = 'none';
-        document.getElementById('sectionLabor').style.display = 'none';
-        AOS.init();
-        AOS.refresh();
-    }
-    
-    function showSection(id) {
-        hideAllSections();
-        document.getElementById(id).style.display = 'block';
-        AOS.init();
-        AOS.refresh();
-    }
-    </script>
+
 <script>
     AOS.init();
 </script>

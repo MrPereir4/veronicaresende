@@ -37,3 +37,10 @@
     font-weight: bold;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'Cabinet Grotesk';
+    src: url(../fonte/CabinetGrotesk-Extrabold.otf) format('opentype');
+    font-weight: 900;
+    font-style: normal;
+}

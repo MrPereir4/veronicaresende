@@ -56,6 +56,12 @@
     margin-top: 32px;
     cursor: pointer;
     color: var(--default_dark_green_color);
+    border-radius: 6px;
+}
+
+.wpp_button_contact:hover {
+    background-color: var(--default_medium_green_color);
+    color: var(--default_green_color);
 }
 
 .wpp_button_contact img{

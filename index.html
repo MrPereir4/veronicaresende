@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="./css/section8.css">
     <link rel="stylesheet" href="./css/section9.css">
     <link rel="stylesheet" href="./css/section10.css">
+    <link rel="stylesheet" href="./css/contact_area.css">
+    <link rel="stylesheet" href="./css/input_style.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/font.css">
 
@@ -43,9 +45,18 @@
                         <a href="./index.html" style="margin: 0;"><img src="./images/LOGO_VR_V2_VE.png" alt="Logo" class="logo"></a>
                         <a class="btns_a" href="./index.html">Home</a>
                         <a class="btns_a" href="#banner_somos">Quem somos</a>
-                        <a class="btns_a" href="#area_atuacao">Áreas de atuação</a>
+                        <div class="dropdown">
+                            <a href="#area_atuacao" style="padding: 0 16px;" class="btns_a dropbtn">Áreas de atuação</button>
+                                <div class="dropdown_holder">
+                                    <div class="dropdown-content" id="dropdownContent">
+                                        <a style="margin-top: 0;" href="./html/servicos.html?section=sectionTributary">Tributário</a>
+                                        <a href="./html/servicos.html?section=sectionCivil">Civil</a>
+                                        <a href="./html/servicos.html?section=sectionLabor">Trabalhista</a>
+                                    </div>
+                                </div>
+                        </div>
                         <a class="btns_a" href="#duvidas_frequentes_id">Dúvidas frequentes</a>
-                        <a class="btns_a" href="./html/contato.html">Contato</a>
+                        <a class="btns_a" href="#contactId">Contato</a>
                     </div>
                     <div class="header-right">
                         <a href="https://www.instagram.com/veronicaresende.adv/"><img src="./images/insta.png" alt="Instagram"></a>
@@ -56,7 +67,7 @@
                 </div>
     
                 <div class="hamb_header">
-                    <img src="./images/LOGO_VR_V2_VE.png" alt="Logo" class="logo">
+                    <img src="./images/logo-veronica.png" alt="Logo" class="logo">
                     <div class="hamburguer-bt">
                         <div class="hamburguer-bt__stripe hamburguer-bt__stripe__top"></div>
                         <div class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"></div>
@@ -68,10 +79,18 @@
                 <div class="mobile-menu">
                     <ul class="main_mobile_ul">
                         <a class="btns_a" href="./index.html"><li>Home</li></a>
-                        <a class="btns_a" href="#banner_somos"><li>Quem somos</li></a>
-                        <a class="btns_a" href="#area_atuacao"><li>Áreas de atuação</li></a>
+                        <a class="btns_a" href="#banner_somos_mobile"><li>Quem somos</li></a>
+                        <div href="" class="services_mobile_btn"><li>Áreas de atuação ▾
+                            <div class="mobile_nav_bar">
+                                <ul class="mobile_nav_dropdown">
+                                    <a href="./html/servicos.html?section=sectionTributary"><li>Tributário</li></a>
+                                    <a href="./html/servicos.html?section=sectionCivil"><li>Civil</li></a>
+                                    <a href="./html/servicos.html?section=sectionLabor"><li>Trabalhista</li></a>
+                                </ul>
+                            </div>   
+                        </li></div>
                         <a class="btns_a" href="#duvidas_frequentes_id"><li>Dúvidas frequentes</li></a>
-                        <a class="btns_a" href="./html/contato.html"><li>Contato</li></a>
+                        <a class="btns_a" href="#contactId"><li>Contato</li></a>
                     </ul>
         
                     <div class="header_social_media_mobile">
@@ -106,27 +125,26 @@
         <div class="welc_bottom_holder desktop_view">
             <div class="welc_aligner">
                 <div class="horizontal_welc_holder">
+                    
                     <div class="welc_vertical_holder">
-                        <div class="welc_img_icon"><img src="./images/civil.png" alt=""></div>
+                        <div class="welc_img_icon"><img src="./images/tributario.png" alt=""></div>
                         <div class="welc_title"><h1>Busca orientação fiscal eficaz?</h1></div>
-                        <div class="welc_paragraph"><p>Posso te orientar em processos de
-                            execuções fiscais e trabalhistas
-                            e assim maximizar sua economia.</p></div>
+                        <div class="welc_paragraph"><p>Posso te orientar em processos de execuções fiscais e assim maximizar suas economia.</p></div>
                     </div>
 
                     <div class="bar_spacing_separator">
 
                     </div>
     
-    
                     <div class="welc_vertical_holder">
-                        <div class="welc_img_icon"><img src="./images/tributario.png" alt=""></div>
+                        <div class="welc_img_icon"><img src="./images/civil.png" alt=""></div>
                         <div class="welc_title"><h1>Proteja seus Direitos com<br/> 
                             a expertise que você merece</h1></div>
-                        <div class="welc_paragraph"><p></p>Posso te ajudar a resolver questões relacionadas a pensão alimentícia, contratos,
+                        <div class="welc_paragraph"><p>Posso te ajudar a resolver questões relacionadas a pensão alimentícia, contratos,
                             direito do consumidor,  questões empresariais, ou outro desafio legal civil com a
                             máxima competência e atenção personalizada que seu caso exige.</p></div>
                     </div>
+                    
 
                     <div class="bar_spacing_separator">
 
@@ -135,9 +153,8 @@
     
                     <div class="welc_vertical_holder">
                         <div class="welc_img_icon"><img src="./images/trabalhista.png" alt=""></div>
-                        <div class="welc_title"><h1>Seus direitos trabalhistas</h1></div>
-                        <div class="welc_paragraph"><p>São a minha preocupação e a sua 
-                            tranquilidade é nosso objetivo.</p></div>
+                        <div class="welc_title"><h1>Seus direitos trabalhista</h1></div>
+                        <div class="welc_paragraph"><p>São a minha preocupação e a tranquilidade, nosso objetivo!</p></div>
                     </div>
                 </div>
             </div>
@@ -149,19 +166,17 @@
         <div class="welc_aligner">
             <div class="horizontal_welc_holder">
                 <div class="welc_vertical_holder" data-aos="fade-up">
-                    <div class="welc_img_icon"><img src="./images/civil.png" alt=""></div>
+                    <div class="welc_img_icon"><img src="./images/tributario.png" alt=""></div>
                     <div class="welc_title"><h1>Busca orientação fiscal eficaz?</h1></div>
-                    <div class="welc_paragraph"><p>Posso te orientar em processos de
-                        execuções fiscais e trabalhistas
-                        e assim maximizar sua economia.</p></div>
+                    <div class="welc_paragraph"><p>Posso te orientar em processos de execuções fiscais e assim maximizar suas economia.</p></div>
                 </div>
 
 
                 <div class="welc_vertical_holder" data-aos="fade-up">
-                    <div class="welc_img_icon"><img src="./images/tributario.png" alt=""></div>
+                    <div class="welc_img_icon"><img src="./images/civil.png" alt=""></div>
                     <div class="welc_title"><h1>Proteja seus Direitos com<br/> 
                         a expertise que você merece</h1></div>
-                    <div class="welc_paragraph"><p></p>Posso te ajudar a resolver questões relacionadas a pensão alimentícia, contratos,
+                    <div class="welc_paragraph"><p>Posso te ajudar a resolver questões relacionadas a pensão alimentícia, contratos,
                         direito do consumidor,  questões empresariais, ou outro desafio legal civil com a
                         máxima competência e atenção personalizada que seu caso exige.</p></div>
                 </div>
@@ -176,7 +191,6 @@
             </div>
         </div>
     </div>
-
 
     <!--Section 2-->
     <section>
@@ -206,10 +220,9 @@
         <a href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_contact"><img src="./images/whatsverde.png" alt=""><p>Entre em contato e agende um horário</p></div></a>
     </section>
 
-
     <!--Section 3-->
     <section class="dark_green_background">
-        <h1 class="default_header_section text_color_medium_green" data-aos="fade-up">Garantia de Excelência Jurídica. Soluções personalizadas</h1>
+        <h1 class="default_header_section text_color_medium_green" data-aos="fade-up">Garantia de Excelência Jurídica</h1>
 
         <ul class="sect_3_ul" data-aos="fade-up">
             <li>Soluções Jurídicas Personalizadas</li>
@@ -220,7 +233,7 @@
         <div class="sec3_horizontal_itens_holder" data-aos="fade-up">
             <div class="sec3_item_vertical">
                 <img src="./images/clientes.png" alt="">
-                <p>+ de 400 clientes<br/>atendidos</p>
+                <p>+ de <span id="customer_counter">400</span> clientes<br/>atendidos</p>
             </div>
 
             <div class="sec3_item_vertical">
@@ -272,7 +285,7 @@
     </section>
 
     <!--Section 5 Mobile-->
-    <section class="remove_section_padding mobile_view">
+    <section class="remove_section_padding mobile_view" id="banner_somos_mobile">
         <div class="section_mobile_holder">
             <img src="./images/veronica_small.png" alt="">
 
@@ -289,55 +302,6 @@
         </div>
     </section>
 
-    <!--Section 6-->
-    <section>
-        <div class="holder_sec_6">
-            <div class="three_rows_sec_6" data-aos="fade-up">
-                <div><h1 id="missao">Missão</h1></div>
-                <div><h1 id="visao">Visão</h1></div>
-                <div><h1 id="valores">Valores</h1></div>
-            </div>
-        
-            <p><img id="imagemDinamica" class="desktop_view" src="./images/missao.png" alt=""><span id="textoDinamico">Escolha uma opção para ver mais detalhes.</span></p>
-            <img class="img_sect_6 mobile_view" src="./images/missao.png" alt="">
-        </div>
-    </section>
-
-    <!--Section 7-->
-    <section class="dark_green_background">
-        <div class="flex_sec_7_holder">
-            <div>
-                <ul data-aos="fade-up">
-                    <li>O Escritório</li>
-                    <li>Com localização privilegiada no coração de Ribeirão Preto, o Escritório de Advocacia Verônica Resende define novos padrões de excelência no direito, proporcionando soluções jurídicas personalizadas que atendem às necessidades específicas de cada cliente. Nossa abordagem é centrada em você, garantindo que cada experiência seja única, assim como o seu caso.<br/><br/>
-                        
-
-                        Nossa fundadora, juntamente com sua equipe de especialistas, consegue o equilíbrio perfeito entre conhecimento especializado e a atenção individualizada que você merece. Nossos serviços jurídicos, tanto consultivos quanto contenciosos, são desenhados para refletir seu mundo pessoal e empresarial, oferecendo não apenas defesa jurídica, mas também estratégias para proteger o que é mais importante para você.<br/><br/>
-                        
-                        Nós do Escritório Verônica Resende somos movidos pela paixão em superar expectativas, utilizando as práticas mais inovadoras e eficientes do direito para garantir o sucesso de nossos clientes. Sua tranquilidade e segurança jurídica são nossa prioridade máxima.<br/><br/>
-                        
-                        Não confie seu caso a qualquer um. Permita que o escritório leve sua jornada jurídica a um patamar de sucesso e confiança jamais visto. </li>
-                    <a href="https://wa.me/message/3BVZBKY4C5YRM1"><div><img src="./images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
-                </ul>
-            </div>
-            <div>
-
-                <div class="carrousel_holder">
-                    <div class="sec_7_image_showing">
-                      <img src="./images/escritorio1.png" alt="Imagem Principal" />
-                    </div>
-                  
-                    <div class="carrousel_slider_holder_sec_7">
-                      <div><img src="./images/escritorio1.png" alt="Imagem 1" /></div>
-                      <div><img src="./images/escritorio2.png" alt="Imagem 2" /></div>
-                      <div><img src="./images/escritorio3.png" alt="Imagem 3" /></div>
-                      <div><img src="./images/escritorio4.png" alt="Imagem 4" /></div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </section>
-    
     <!--Section 8-->
     <section id="area_atuacao">
         <div class="section_8_holder">
@@ -345,46 +309,45 @@
             <h2 data-aos="fade-up" class="subheader_section_8">Veja como podemos te ajudar</h2>
     
             <div class="horizontal_block_holder_section8" data-aos="fade-up">
+
                 <div class="full_block_holder_section_8">
                     <div class="single_block_holder new_medium_green_gb">
                         <ul>
-                            <li>Civil</li>
-                            <li>O Direito Civil é o ramo do direito responsável por reger a relação na nossa sociedade, são diversas leis e códigos relacionados aos direitos das pessoas e empresas, desta forma, surgem muitas vezes a necessidade de um especialista que possa ajudar a resolver situações complexas e oferecer soluções que garantam o direito e interesses evitando abusos e injustiças. E nesse contexto que o advogado da área cível assume um papel indispensável como um defensor dos seus clientes nos mais diversos assuntos jurídicos.</li>
-                        </ul>
-                    </div>
-                    <a href="./html/servicos.html?section=sectionCivil"><div class="dark_button_section_8_holder"><span>Entenda melhor</span></div></a>
-                </div><!--Full block end-->
-    
-    
-                <div class="full_block_holder_section_8">
-                    <div class="single_block_holder dark_medium_green_background">
-                        <ul>
-                            <li>Tributário</li>
+                            <li>Tributário<img src="./images/tributario.png" alt=""></li>
                             <li>Navegar pelo complexo sistema tributário brasileiro pode ser um desafio intimidador para qualquer empresa ou indivíduo. Com as constantes alterações na legislação e a carga tributária elevada, contar com a expertise de um advogado tributário torna-se não apenas uma necessidade, mas uma estratégia inteligente para assegurar o cumprimento das obrigações fiscais e, ao mesmo tempo, otimizar os recursos financeiros.
                                 Assim um especialista em direito tributário pode ser um aliado valioso para você ou sua empresa.</li>
                         </ul>
                     </div>
-                    <a href="./html/servicos.html?section=sectionTributary"><div class="light_button_section_8_holder"><span>Entenda melhor</span></div></a>
+                    <a href="./html/servicos.html?section=sectionTributary"><div class=" dark_button_section_8_holder"><span>Saiba mais</span></div></a>
                 </div><!--Full block end-->
-    
+
+                <div class="full_block_holder_section_8">
+                    <div class="single_block_holder  dark_medium_green_background">
+                        <ul>
+                            <li>Civil<img src="./images/civil.png" alt=""></li>
+                            <li>O Direito Civil é o ramo do direito responsável por reger a relação na nossa sociedade, são diversas leis e códigos relacionados aos direitos das pessoas e empresas, desta forma, surgem muitas vezes a necessidade de um especialista que possa ajudar a resolver situações complexas e oferecer soluções que garantam o direito e interesses evitando abusos e injustiças. E nesse contexto que o advogado da área cível assume um papel indispensável como um defensor dos seus clientes nos mais diversos assuntos jurídicos.</li>
+                        </ul>
+                    </div>
+                    <a href="./html/servicos.html?section=sectionCivil"><div class="light_button_section_8_holder"><span>Saiba mais</span></div></a>
+                </div><!--Full block end-->
     
                 <div class="full_block_holder_section_8">
                     <div class="single_block_holder new_medium_green_gb">
                         <ul>
-                            <li>Trabalhista</li>
+                            <li>Trabalhista<img src="./images/trabalhista.png" alt=""></li>
                             <li>Você está enfrentando um problema relacionado ao ambiente de trabalho? Os conflitos laborais podem ser tanto complexos como estressantes.
                                 Nestes momentos, é crucial ter ao seu lado um advogado da área trabalhista, um profissional especializado capaz de guiar você no entendimento das leis trabalhistas e lutar efetivamente pelos seus direitos.</li>
                         </ul>
                     </div>
-                    <a href="./html/servicos.html?section=sectionLabor"><div class="dark_button_section_8_holder"><span>Entenda melhor</span></div></a>
+                    <a href="./html/servicos.html?section=sectionLabor"><div class="dark_button_section_8_holder"><span>Saiba mais</span></div></a>
                 </div><!--Full block end-->
             </div>
         </div>
         
     </section>
 
-    <!--Section 9-->
-    <section class="remove_section_padding">
+       <!--Section 9-->
+       <section class="remove_section_padding">
         <div class="section_9_holder">
             <img class="map_view_mobile" src="./images/brasil.png" alt="">
             <div class="section_9_background_holder">
@@ -402,6 +365,74 @@
         </div>
     </section>
 
+    <!--Section 7 desktop-->
+    <section class="remove_section_padding desktop_view" id="section_7">
+        <div class="carrousel_holder" id="car_holder">
+            <div class="sec_7_image_showing">
+                <img id="img_bussiness" src="./images/escritorio1.png" alt="">
+            </div>
+        </div>
+
+        <div class="flex_sec_7_holder" id="bussiness_content">
+            <div class="content_aligner_sec_7">
+                <ul id="text_bussiness_right">
+                    <li>O escritório</li>
+                    <li>Com localização privilegiada no coração de Ribeirão Preto, o Escritório de Advocacia Verônica Resende define novos padrões de excelência no direito, proporcionando soluções jurídicas personalizadas que atendem às necessidades específicas de cada cliente. Nossa abordagem é centrada em você, garantindo que cada experiência seja única, assim como o seu caso.<br/><br/>
+    
+                        Nossa fundadora, juntamente com sua equipe de especialistas, consegue o equilíbrio perfeito entre conhecimento especializado e a atenção individualizada que você merece. Nossos serviços jurídicos, tanto consultivos quanto contenciosos, são desenhados para refletir seu mundo pessoal e empresarial, oferecendo não apenas defesa jurídica, mas também estratégias para proteger o que é mais importante para você.<br/><br/>
+                        
+                        Nós do Escritório Verônica Resende somos movidos pela paixão em superar expectativas, utilizando as práticas mais inovadoras e eficientes do direito para garantir o sucesso de nossos clientes. Sua tranquilidade e segurança jurídica são nossa prioridade máxima.<br/><br/>
+                        
+                        Não confie seu caso a qualquer um. Permita que o escritório leve sua jornada jurídica a um patamar de sucesso e confiança jamais visto. </li>
+
+                        <a href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="contact_whatsapp_button"> <img src="./images/whatsverde.png" alt="Whatsapp logo"> <span>Fale conosco</span> </div></a>
+                    </ul>
+            </div>
+        </div>
+    </section>
+
+    <!--Section 7 mobile-->
+    <section class="remove_section_padding mobile_view" id="section_7">
+        <div class="carrousel_holder_mobile">
+            <div class="sec_7_image_showing_mobile">
+                <img id="img_bussiness_mobile" src="./images/escritorio1.png" alt="">
+            </div>
+        </div>
+
+        <div class="text_holder">
+            <ul class="dra_veronica_holder" data-aos="fade-up">
+                <li>O escritório</li>
+                <li>Com localização privilegiada no coração de Ribeirão Preto, o Escritório de Advocacia Verônica Resende define novos padrões de excelência no direito, proporcionando soluções jurídicas personalizadas que atendem às necessidades específicas de cada cliente. Nossa abordagem é centrada em você, garantindo que cada experiência seja única, assim como o seu caso.<br/><br/>
+    
+                    Nossa fundadora, juntamente com sua equipe de especialistas, consegue o equilíbrio perfeito entre conhecimento especializado e a atenção individualizada que você merece. Nossos serviços jurídicos, tanto consultivos quanto contenciosos, são desenhados para refletir seu mundo pessoal e empresarial, oferecendo não apenas defesa jurídica, mas também estratégias para proteger o que é mais importante para você.<br/><br/>
+                    
+                    Nós do Escritório Verônica Resende somos movidos pela paixão em superar expectativas, utilizando as práticas mais inovadoras e eficientes do direito para garantir o sucesso de nossos clientes. Sua tranquilidade e segurança jurídica são nossa prioridade máxima.<br/><br/>
+                    
+                    Não confie seu caso a qualquer um. Permita que o escritório leve sua jornada jurídica a um patamar de sucesso e confiança jamais visto.</li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="carrousel_slider_holder_sec_7" style="display: none;">
+        <img src="./images/escritorio1.png" alt="">
+        <img src="./images/escritorio2.png" alt="">
+        <img src="./images/escritorio3.png" alt="">
+        <img src="./images/escritorio4.png" alt="">
+    </div>
+
+    <!--Section 6-->
+    <section>
+        <div class="holder_sec_6">
+            <div class="three_rows_sec_6" data-aos="fade-up">
+                <div><img src="./images/missao.png" alt=""><h1 id="missao">Missão</h1></div>
+                <div><img src="./images/visao.png" alt=""><h1 id="visao">Visão</h1></div>
+                <div><img src="./images/valores.png" alt=""><h1 id="valores">Valores</h1></div>
+            </div>
+        
+            <p><img id="imagemDinamica" class="desktop_view" src="./images/missao.png" alt=""><span id="textoDinamico">Escolha uma opção para ver mais detalhes.</span></p>
+            <img class="img_sect_6 mobile_view" src="./images/missao.png" alt="">
+        </div>
+    </section>
 
     <!--Section 10-->
     <section id="duvidas_frequentes_id">
@@ -424,7 +455,7 @@
 
                   <div class="single_item_section_10_item">
                     <div class="header_item_section_10">
-                      <h1>Recebi uma cobrança de Execução Fiscal, e agora?</h1> 
+                      <h1>Tenho direito de receber adicional de insalubridade?</h1> 
                       <img src="./images/arrow_left.png" alt="">
                     </div>
                     <div class="content_item_section_10 hidden">
@@ -496,6 +527,84 @@
         </div>
     </section>
 
+    <!--Section 11-->
+    <section id="contactId">
+        <div class="contact_area_holder" data-aos="fade-up">
+            <h1 class="main_header_contact_area">Estamos prontos para te ouvir e ajudar da melhor forma.</h1>
+            <h2 class="secondary_header_contact_area">Asseguramos-lhe que você está dando o primeiro passo importante para garantir </br> a representação legal da mais alta qualidade possível.</h2>
+        </div>
+
+
+        <div class="flex_contact_main_info" data-aos="fade-up">
+            <div class="location_contact_info">
+                <h1>Saiba onde e como chegar no</h1>
+                <div class="contact_busin_back"><h2>Escritório</h2></div>
+
+                <div class="flex_location_contact_area">
+                    <ul>
+                        <li class="text_extrabold">Endereço</li>
+                        <li>Edifício Spasse Office</li>
+                        <li>Av. Maurílio Biagi, 800 - sala 706</li>
+                        <li>Santa Cruz - Ribeirão Preto/SP</li>
+                    </ul>
+
+                    <ul>
+                        <li class="text_extrabold">Horário</li>
+                        <li>De segunda a sexta das 09h00 às 17h00</li>
+                    </ul>
+
+                    <ul>
+                        <li class="text_extrabold">E-mail</li>
+                        <li>contato@veronicaresende.adv.br</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="line_separator desktop_view"></div>
+
+            <div class="form_contact_area">
+                <h1>Deixe sua mensagem</h1>
+                <form action="">
+                    <div class="group">
+                        <input type="text" name="name" id="nome" autocomplete="off" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Nome</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" name="email" id="email" autocomplete="off" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>E-mail</label>
+                    </div>
+
+                    <div class="group">
+                        <input type="text" name="phone" id="phone" autocomplete="off" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Telefone</label>
+                    </div>
+
+                    <div class="group">
+                        <input style="padding-top: 30px;" type="text" name="message" id="message" autocomplete="off" required="">
+                        <span class="highlight"></span>
+                        <span class="bar"></span>
+                        <label>Conte sobre seu problema e nossa especialista entrará em contato com você</label>
+                    </div>
+
+                    <button>Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="map_display" data-aos="fade-up">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.7572727208617!2d-47.80086321398528!3d-21.201799230189103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b9bf2db372ba75%3A0xc88ac89131a441b1!2sEdificio%20Spasse!5e0!3m2!1spt-BR!2sbr!4v1706724292702!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <footer style="top: 173px" class="main_top_container">
         <div class="top_footer">
           <div class="logo_footer">
@@ -528,6 +637,8 @@
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.7.1/countUp.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.js"></script>
     <script src="./javascript/hamb.js"></script>
     <script src="./javascript/slider.js"></script>
     <script src="./javascript/custom_selector_image.js"></script>
@@ -535,7 +646,9 @@
     <script src="./javascript/opacity_header.js"></script>
     <script src="./javascript/change_three_opt_hover.js"></script>
     <script src="./javascript/slideTo.js"></script>
+    <script src="./javascript/counter.js"></script>
+    <script src="./javascript/dropdown.js"></script>
+    <script src="./javascript/masks.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
 </body>
 </html>

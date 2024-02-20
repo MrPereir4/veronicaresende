@@ -3,6 +3,7 @@
     width: 100%;
     background-color: var(--default_green_color);
     max-width: 650px;
+    border-radius: 6px;
     margin: 0 auto;
 }
 
