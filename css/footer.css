@@ -17,6 +17,11 @@ footer {
     padding: 25px 16px;
 }
 
+.no-link-style {
+    color: white;
+    text-decoration: none;
+}
+
 .logo_footer {
     display: flex;
     flex-direction: row;
