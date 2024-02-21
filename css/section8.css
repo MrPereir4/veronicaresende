@@ -34,6 +34,7 @@
     padding: 32px 16px;
     height: 100%;
     border-radius: 12px;
+    font-weight: 300;
 }
 
 .single_block_holder ul {
