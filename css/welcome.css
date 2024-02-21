@@ -249,7 +249,7 @@ s
     position: fixed;
     top: -100px;
     transition: all 0.2s ease-in;
-    z-index: 9999;
+    z-index: 999;
 }
 
 .flex_opt_holder_menu .horizontal_item h1 {
