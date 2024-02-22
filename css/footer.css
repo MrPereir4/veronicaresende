@@ -18,7 +18,7 @@ footer {
 }
 
 .no-link-style {
-    color: white;
+    color: var(--default_green_color);
     text-decoration: none;
 }
 
@@ -38,7 +38,7 @@ footer {
     flex: 1;
 }
 .contact_footer ul{
-    color: white;
+    color: var(--default_green_color);
     text-align: center;
     font-weight: 400;
     padding: 0;
@@ -50,7 +50,7 @@ footer {
 }
 
 .contact_footer ul li:first-child{
-    color: white;
+    color: var(--default_green_color);
 }
 
 .spacing_footer {
@@ -66,7 +66,7 @@ footer {
 }
 
 .bottom_footer {
-    background-color: white;
+    color: var(--default_green_color);
     display: flex;
     padding: 16px 16px;
     justify-content: center;

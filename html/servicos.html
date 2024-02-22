@@ -88,10 +88,10 @@
     <div class="welcome_main_background page2_bg">
         <div class="welcome_text_holder">
             <ul>
-                <li>Descubra como a<br/>
+                <li style="font-weight: 300 !important;">Descubra como a<br/>
                     Dra. Verônica Resende<br/>
-                    pode te ajudar nas Áreas <br/>
-                    Civil, Tributário e Trabalhista</li>
+                    <b>pode te ajudar</b> nas Áreas <br/>
+                    <b>Civil, Tributário e Trabalhista</b></li>
             </ul>
         </div>
 
@@ -99,19 +99,25 @@
         <div class="welc_bottom_holder desktop_view">
             <div class="welc_aligner">
                 <div class="horizontal_welc_holder">
-                    <div class="horizontal_item sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
-                        <img src="../images/tributario.png" alt="">
-                        <h1>Tributário</h1>
+                    <div class="horizontal_item" >
+                        <div class="icon_and_text_serv_holder sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
+                            <img src="../images/tributario.png" alt="">
+                            <h1>Tributário</h1>
+                        </div>
                     </div>
 
-                    <div class="horizontal_item civilClass sectionCivilClass" id="sectionCivilButton" onclick="showSection('sectionCivil')">
-                        <img src="../images/civil.png" alt="">
-                        <h1>Civil</h1>
+                    <div class="horizontal_item civilClass ">
+                        <div class="icon_and_text_serv_holder sectionCivilClass"  id="sectionCivilButton" onclick="showSection('sectionCivil')">
+                            <img src="../images/civil.png" alt="">
+                            <h1>Civil</h1>
+                        </div>
                     </div>
 
-                    <div class="horizontal_item laborClass sectionLaborClass" id="sectionLaborButton" onclick="showSection('sectionLabor')">
-                        <img src="../images/trabalhista.png" alt="">
-                        <h1>Trabalhista</h1>
+                    <div class="horizontal_item laborClass ">
+                        <div class="icon_and_text_serv_holder sectionLaborClass"  id="sectionLaborButton" onclick="showSection('sectionLabor')">
+                            <img src="../images/trabalhista.png" alt="">
+                            <h1>Trabalhista</h1>
+                        </div>
                     </div>
 
                 </div>
@@ -123,19 +129,25 @@
      <div class="welc_bottom_holder mobile_welc_holder mobile_view">
         <div class="welc_aligner">
             <div class="horizontal_welc_holder" >
-                <div class="horizontal_item sectionTributaryClass" onclick="showSection('sectionTributary')">
-                    <img src="../images/tributario.png" alt="">
-                    <h1>Tributário</h1>
+                <div class="horizontal_item" >
+                    <div class="icon_and_text_serv_holder sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
+                        <img src="../images/tributario.png" alt="">
+                        <h1>Tributário</h1>
+                    </div>
                 </div>
 
-                <div class="horizontal_item sectionCivilClass" onclick="showSection('sectionCivil')">
-                    <img src="../images/civil.png" alt="">
-                    <h1>Civil</h1>
+                <div class="horizontal_item civilClass ">
+                    <div class="icon_and_text_serv_holder sectionCivilClass"  id="sectionCivilButton" onclick="showSection('sectionCivil')">
+                        <img src="../images/civil.png" alt="">
+                        <h1>Civil</h1>
+                    </div>
                 </div>
 
-                <div class="horizontal_item sectionLaborClass" onclick="showSection('sectionLabor')">
-                    <img src="../images/trabalhista.png" alt="">
-                    <h1>Trabalhista</h1>
+                <div class="horizontal_item laborClass ">
+                    <div class="icon_and_text_serv_holder sectionLaborClass"  id="sectionLaborButton" onclick="showSection('sectionLabor')">
+                        <img src="../images/trabalhista.png" alt="">
+                        <h1>Trabalhista</h1>
+                    </div>
                 </div>
             </div>
         </div>
@@ -143,107 +155,116 @@
 
     <div class="menu_opts_horizontal mobile_view">
         <div class="flex_opt_holder_menu">
-            <div class="horizontal_item tribClass sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
-                <img src="../images/tributario.png" alt="">
-                <h1>Tributário</h1>
+            <div class="horizontal_item" >
+                <div class="icon_and_text_serv_holder sectionTributaryClass" id="sectionTributaryButton" onclick="showSection('sectionTributary')">
+                    <img src="../images/tributario.png" alt="">
+                    <h1>Tributário</h1>
+                </div>
             </div>
 
-            <div class="horizontal_item civilClass sectionCivilClass" id="sectionCivilButton" onclick="showSection('sectionCivil')">
-                <img src="../images/civil.png" alt="">
-                <h1>Civil</h1>
+            <div class="horizontal_item civilClass ">
+                <div class="icon_and_text_serv_holder sectionCivilClass"  id="sectionCivilButton" onclick="showSection('sectionCivil')">
+                    <img src="../images/civil.png" alt="">
+                    <h1>Civil</h1>
+                </div>
             </div>
 
-            <div class="horizontal_item sectionLaborClass laborClass" id="sectionLaborButton" onclick="showSection('sectionLabor')">
-                <img src="../images/trabalhista.png" alt="">
-                <h1>Trabalhista</h1>
+            <div class="horizontal_item laborClass ">
+                <div class="icon_and_text_serv_holder sectionLaborClass"  id="sectionLaborButton" onclick="showSection('sectionLabor')">
+                    <img src="../images/trabalhista.png" alt="">
+                    <h1>Trabalhista</h1>
+                </div>
             </div>
         </div>
     </div>
 
-    <!--Section 2 Services-->
-    <section  id="sectionCivil" class="dark_medium_green_background text_color_green top_section_services_spacing">
-        <div class="section_2_service_holder">
-            <div class="header_with_icon" data-aos="fade-up"><img src="../images/civil.png" alt=""> <h1>Civil</h1></div>
+    <div class="scroll_here">
+        <!--Section 2 Services-->
+        <section  id="sectionCivil" class="dark_medium_green_background text_color_green top_section_services_spacing">
+            <div class="section_2_service_holder">
+                <div class="header_with_icon" data-aos="fade-up"><img src="../images/civil.png" alt=""> <h1>Civil</h1></div>
 
-            <div class="flex_all_content_holder_for_ul" data-aos="fade-up">
-                <ul class="flex_all_content_holder_for_ul_no_list_style">
-                    <li class="text_extrabold">O que é Direito Civil e Como Ele se Aplica a você</li>
-                    <li class="text_medium">O Direto Civil é uma vasta área que abrange tudo, desde contratos até propriedade e responsabilidade cvil. Ele se concentra nas relações entre pessoas e as leis que regulamentam essas relações. Se voce está negociando um contrato, passando por um divórcio, vendendo um Imóvel, ou até mesmo disputando um testamento, é o direito civil que define seus direitos e obrigações.</li>
-                    <li class="text_extrabold">A Importância do Advogado Civil</li>
-                    <li class="text_medium">Um advogado civil traz à mesa um conhecimento profundo dessas lels e normas, o que é crucial quando se trata de defender seus Interesses. Esses profissionais são treinados para Interpretar e aplicar o direito de maneira a manter a justiça e a equidade para os seus cllentes. São eles que lhe assessoram em processos judicials e negociações extrajudicials</li>
-                    <li class="text_extrabold">Como um Advogado Civil Pode Ajudar</li>
-                </ul>
+                <div class="flex_all_content_holder_for_ul" data-aos="fade-up">
+                    <ul class="flex_all_content_holder_for_ul_no_list_style">
+                        <li class="text_extrabold">O que é Direito Civil e Como Ele se Aplica a você</li>
+                        <li class="text_medium">O Direto Civil é uma vasta área que abrange tudo, desde contratos até propriedade e responsabilidade cvil. Ele se concentra nas relações entre pessoas e as leis que regulamentam essas relações. Se voce está negociando um contrato, passando por um divórcio, vendendo um Imóvel, ou até mesmo disputando um testamento, é o direito civil que define seus direitos e obrigações.</li>
+                        <li class="text_extrabold">A Importância do Advogado Civil</li>
+                        <li class="text_medium">Um advogado civil traz à mesa um conhecimento profundo dessas lels e normas, o que é crucial quando se trata de defender seus Interesses. Esses profissionais são treinados para Interpretar e aplicar o direito de maneira a manter a justiça e a equidade para os seus cllentes. São eles que lhe assessoram em processos judicials e negociações extrajudicials</li>
+                        <li class="text_extrabold">Como um Advogado Civil Pode Ajudar</li>
+                    </ul>
 
-                <ul>
-                    <li><b>Interpretação contratual:</b> Um advogado pode assegurar que voce entenda plenamente todas as clausulas de um contrato antes de assina-lo e também colaborar na redação de contratos que protejam seus interesses.</li>
-                    <li><b>Resolução de disputas:</b> Se houver um conflito, seja por acidentes de transito, disputas imobiliárias ou contenciosos familiares, um advogado civil pode representá-lo em tribunal ou em negociações para resolver a disputa de torma eficaz.</li>
-                    <li><b>Direitos do consumidor:</b> Se você acreditar que seus direitos enquanto consumidor foram violados, como atraso ou cancelamento de voo,
-                        Cobrança Indevida, desconto de seguros ou empréstimos consignados irregulares, um advogado civil pode ajuda-lo a reivindicar as indenizações devidas.</li>
-                </ul>
+                    <ul>
+                        <li><b>Interpretação contratual:</b> Um advogado pode assegurar que voce entenda plenamente todas as clausulas de um contrato antes de assina-lo e também colaborar na redação de contratos que protejam seus interesses.</li>
+                        <li><b>Resolução de disputas:</b> Se houver um conflito, seja por acidentes de transito, disputas imobiliárias ou contenciosos familiares, um advogado civil pode representá-lo em tribunal ou em negociações para resolver a disputa de torma eficaz.</li>
+                        <li><b>Direitos do consumidor:</b> Se você acreditar que seus direitos enquanto consumidor foram violados, como atraso ou cancelamento de voo,
+                            Cobrança Indevida, desconto de seguros ou empréstimos consignados irregulares, um advogado civil pode ajuda-lo a reivindicar as indenizações devidas.</li>
+                    </ul>
 
-                <ul class="flex_all_content_holder_for_ul_no_list_style">
-                    <li class="text_extrabold">O Processo de Trabalho do Advogado Civil</li>
-                    <li class="text_medium">Ao abordar um advogado civil, inicialmente sem avaliado todos os detalhes da sua situação. Isso envolve uma compreensão profunda do seu caso, a coleta de todas as evidências necessárias e a identificação da melhor estratégia legal a seguir. Eles Informarão claramente sobre as opções disponivels e as possivels consequências.</li>
-                    <li class="text_extrabold">Conclusão</li>
-                    <li class="text_medium">Quando as complexidades do Direito Civil se tornarem um desatio, ter um advogado civil ao seu lado é mais do que um luxo, é uma necessidade. Eles garantem que seus direitos sejam protegidos e que você possa navegar as aguas por vezes turbulentas do sistema jurídico com confiança. Se você se encontra em um Impasse legal ou simplesmente busca assegurar que suas negoclações e contratos estejam solidamente fundamentados, não hesite em procurar a assistência de um advogado especlalizado em direito civil.</li>
-                </ul>
+                    <ul class="flex_all_content_holder_for_ul_no_list_style">
+                        <li class="text_extrabold">O Processo de Trabalho do Advogado Civil</li>
+                        <li class="text_medium">Ao abordar um advogado civil, inicialmente sem avaliado todos os detalhes da sua situação. Isso envolve uma compreensão profunda do seu caso, a coleta de todas as evidências necessárias e a identificação da melhor estratégia legal a seguir. Eles Informarão claramente sobre as opções disponivels e as possivels consequências.</li>
+                        <li class="text_extrabold">Conclusão</li>
+                        <li class="text_medium">Quando as complexidades do Direito Civil se tornarem um desatio, ter um advogado civil ao seu lado é mais do que um luxo, é uma necessidade. Eles garantem que seus direitos sejam protegidos e que você possa navegar as aguas por vezes turbulentas do sistema jurídico com confiança. Se você se encontra em um Impasse legal ou simplesmente busca assegurar que suas negoclações e contratos estejam solidamente fundamentados, não hesite em procurar a assistência de um advogado especlalizado em direito civil.</li>
+                    </ul>
+                </div>
+
+                <a class="wpp_a" href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small medium_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
             </div>
+        </section>
 
-            <a class="wpp_a" href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small medium_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
-        </div>
-    </section>
+        <!--Section 3-->
+        <section id="sectionTributary" class="new_medium_green_gb text_color_green  top_section_services_spacing">
+            <div class="section_2_service_holder">
+                <div class="header_with_icon" data-aos="fade-up"><img src="../images/tributario.png" alt=""> <h1>Tributário</h1></div>
 
-    <!--Section 3-->
-    <section id="sectionTributary" class="dark_green_background text_color_green  top_section_services_spacing">
-        <div class="section_2_service_holder">
-            <div class="header_with_icon" data-aos="fade-up"><img src="../images/tributario.png" alt=""> <h1>Tributário</h1></div>
-
-            <div class="flex_all_content_holder_for_ul" data-aos="fade-up">
-                <ul class="flex_all_content_holder_for_ul_no_list_style">
-                    <li class="text_extrabold">Defesa em Autuações Fiscais</li>
-                    <li class="text_medium">Somos especialistas em defesas de execuções fiscais.<br/>
-                        Se você ou sua empresa foram notificados de uma autuação fiscal administrativo ou de um processo de execução fiscal, um advogado tributário é crucial para defender seus interesses. Com um conhecimento profundo sobre leis fiscais e processuais, o advogado pode questionar multas e autuações indevidas, negociar parcelamentos e até mesmo obter anistias ou reduções de penalidades.
+                <div class="flex_all_content_holder_for_ul" data-aos="fade-up">
+                    <ul class="flex_all_content_holder_for_ul_no_list_style">
+                        <li class="text_extrabold">Defesa em Autuações Fiscais</li>
+                        <li class="text_medium">Somos especialistas em defesas de execuções fiscais.<br/>
+                            Se você ou sua empresa foram notificados de uma autuação fiscal administrativo ou de um processo de execução fiscal, um advogado tributário é crucial para defender seus interesses. Com um conhecimento profundo sobre leis fiscais e processuais, o advogado pode questionar multas e autuações indevidas, negociar parcelamentos e até mesmo obter anistias ou reduções de penalidades.
+                            </li>
+                        <li class="text_extrabold">Recuperação de Créditos Tributários</li>
+                        <li class="text_medium">Empresas com frequência pagam impostos em quantidade maior do que a devida. Um advogado tributário pode revisar pagamentos anteriores e identificar oportunidades de recuperação de créditos tributários, resultando em uma importante economia financeira para o cliente.
                         </li>
-                    <li class="text_extrabold">Recuperação de Créditos Tributários</li>
-                    <li class="text_medium">Empresas com frequência pagam impostos em quantidade maior do que a devida. Um advogado tributário pode revisar pagamentos anteriores e identificar oportunidades de recuperação de créditos tributários, resultando em uma importante economia financeira para o cliente.
-                    </li>
 
-                <ul class="flex_all_content_holder_for_ul_no_list_style">
-                    <li class="text_extrabold">Consultoria em Reformas Tributárias</li>
-                    <li class="text_medium">Com as frequentes mudanças nas leis tributárias, é essencial ter ao seu lado um profissional atualizado e preparado para orientar sobre as melhores formas de adaptar-se às novas regras. Isso pode evitar surpresas desagradáveis e aproveitar possíveis vantagens competitivas.</li>
-                    <li class="text_extrabold">Conclusão</li>
-                    <li class="text_medium">O papel de um advogado tributário vai muito além de responder a dúvidas sobre impostos. É um serviço abrangente que envolve orientar, planejar, e proteger financeiramente empresas e indivíduos frente às complexidades do sistema tributário. Investir em uma assessoria jurídica especializada em tributos não é apenas uma medida defensiva, mas sim uma estratégia proativa para assegurar que seus direitos sejam respeitados e que seu dinheiro seja pautado pela máxima eficiência fiscal.</li>
-                </ul>
+                    <ul class="flex_all_content_holder_for_ul_no_list_style">
+                        <li class="text_extrabold">Consultoria em Reformas Tributárias</li>
+                        <li class="text_medium">Com as frequentes mudanças nas leis tributárias, é essencial ter ao seu lado um profissional atualizado e preparado para orientar sobre as melhores formas de adaptar-se às novas regras. Isso pode evitar surpresas desagradáveis e aproveitar possíveis vantagens competitivas.</li>
+                        <li class="text_extrabold">Conclusão</li>
+                        <li class="text_medium">O papel de um advogado tributário vai muito além de responder a dúvidas sobre impostos. É um serviço abrangente que envolve orientar, planejar, e proteger financeiramente empresas e indivíduos frente às complexidades do sistema tributário. Investir em uma assessoria jurídica especializada em tributos não é apenas uma medida defensiva, mas sim uma estratégia proativa para assegurar que seus direitos sejam respeitados e que seu dinheiro seja pautado pela máxima eficiência fiscal.</li>
+                    </ul>
+                </div>
+
+                <a class="wpp_a " href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small dark_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
             </div>
+        </section>
 
-            <a class="wpp_a " href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small dark_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
-        </div>
-    </section>
+        <!--Section 4-->
+        <section id="sectionLabor" class="new_medium_green_gb text_color_green top_section_services_spacing">
+            <div class="section_2_service_holder">
+                <div class="header_with_icon" data-aos="fade-up"><img src="../images/trabalhista.png" alt=""> <h1>Trabalhista</h1></div>
 
-    <!--Section 4-->
-    <section id="sectionLabor" class="dark_green_background text_color_green top_section_services_spacing">
-        <div class="section_2_service_holder">
-            <div class="header_with_icon" data-aos="fade-up"><img src="../images/trabalhista.png" alt=""> <h1>Trabalhista</h1></div>
+                <div class="flex_all_content_holder_for_ul" data-aos="fade-up">
+                    <ul class="flex_all_content_holder_for_ul_no_list_style">
+                        <li class="text_extrabold">Auxílio na Prevenção e na Resolução de Conflitos</li>
+                        <li class="text_medium">Um dos principais papéis de um advogado trabalhista é fornecer consultoria preventiva. Isso significa que além de atuar em litígios, ele pode ajudar a evitar processos judiciais por meio de assessoria jurídica – garantindo que os direitos dos trabalhadores sejam respeitados e que o empregador esteja em conformidade com as normas vigentes. No entanto, quando os problemas se tornam inevitáveis, este profissional está preparado para representar seus clientes, buscando a resolução de conflitos por vias administrativas ou em juízo.
+                            </li>
+                        <li class="text_extrabold">Negociação de Acordos</li>
+                        <li class="text_medium">Muitas vezes, um advogado trabalhista é capaz de chegar a um acordo satisfatório para ambas as partes antes mesmo de um processo judicial ser instaurado. Com um conhecimento profundo da legislação e das tendências dos tribunais, o advogado pode negociar termos que estejam alinhados aos melhores interesses do trabalhador, aliviando assim a carga emocional e financeira associada a estes processos.</li>
 
-            <div class="flex_all_content_holder_for_ul" data-aos="fade-up">
-                <ul class="flex_all_content_holder_for_ul_no_list_style">
-                    <li class="text_extrabold">Auxílio na Prevenção e na Resolução de Conflitos</li>
-                    <li class="text_medium">Um dos principais papéis de um advogado trabalhista é fornecer consultoria preventiva. Isso significa que além de atuar em litígios, ele pode ajudar a evitar processos judiciais por meio de assessoria jurídica – garantindo que os direitos dos trabalhadores sejam respeitados e que o empregador esteja em conformidade com as normas vigentes. No entanto, quando os problemas se tornam inevitáveis, este profissional está preparado para representar seus clientes, buscando a resolução de conflitos por vias administrativas ou em juízo.
-                        </li>
-                    <li class="text_extrabold">Negociação de Acordos</li>
-                    <li class="text_medium">Muitas vezes, um advogado trabalhista é capaz de chegar a um acordo satisfatório para ambas as partes antes mesmo de um processo judicial ser instaurado. Com um conhecimento profundo da legislação e das tendências dos tribunais, o advogado pode negociar termos que estejam alinhados aos melhores interesses do trabalhador, aliviando assim a carga emocional e financeira associada a estes processos.</li>
+                    <ul class="flex_all_content_holder_for_ul_no_list_style">
+                        <li class="text_extrabold">Atualização Constante nas Leis Trabalhistas</li>
+                        <li class="text_medium">As leis trabalhistas estão em constante evolução, e manter-se atualizado é imperativo para a prática eficaz da advocacia trabalhista. Um advogado da área trabalhista está sempre se aperfeiçoando e se atualizando sobre as últimas mudanças legislativas e jurisprudências referentes ao direito do trabalho, assegurando a aplicação correta e atual das leis em benefício do cliente.</li>
+                        <li class="text_extrabold">Conclusão</li>
+                        <li>Ao enfrentar incertezas ou disputas no mundo do trabalho, o auxílio de um advogado trabalhista se torna não apenas um elemento facilitador, mas, em muitos casos, o decisivo diferencial para a garantia e proteção de seus direitos laborais. Se você está passando por desafios trabalhistas, não hesite em buscar um advogado especializado que possa lhe fornecer a orientação e o suporte necessários para enfrentar e superar tais obstáculos.</li>
+                    </ul>
+                </div>
 
-                <ul class="flex_all_content_holder_for_ul_no_list_style">
-                    <li class="text_extrabold">Atualização Constante nas Leis Trabalhistas</li>
-                    <li class="text_medium">As leis trabalhistas estão em constante evolução, e manter-se atualizado é imperativo para a prática eficaz da advocacia trabalhista. Um advogado da área trabalhista está sempre se aperfeiçoando e se atualizando sobre as últimas mudanças legislativas e jurisprudências referentes ao direito do trabalho, assegurando a aplicação correta e atual das leis em benefício do cliente.</li>
-                    <li class="text_extrabold">Conclusão</li>
-                    <li>Ao enfrentar incertezas ou disputas no mundo do trabalho, o auxílio de um advogado trabalhista se torna não apenas um elemento facilitador, mas, em muitos casos, o decisivo diferencial para a garantia e proteção de seus direitos laborais. Se você está passando por desafios trabalhistas, não hesite em buscar um advogado especializado que possa lhe fornecer a orientação e o suporte necessários para enfrentar e superar tais obstáculos.</li>
-                </ul>
+                <a class="wpp_a" href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small dark_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
             </div>
-
-            <a class="wpp_a" href="https://wa.me/message/3BVZBKY4C5YRM1"><div class="wpp_button_small dark_wpp"><img src="../images/whatsverde.png" alt=""><span>Fale conosco</span></div></a>
-        </div>
-    </section>
+        </section>
+    </div>
+    
 
 
     <section>
@@ -295,6 +316,7 @@
 <script src="../javascript/hamb.js"></script>
 <script src="../javascript/opacity_header.js"></script>
 <script src="../javascript/present_ever.js"></script>
+<script src="../javascript/services_slide_to.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <script>

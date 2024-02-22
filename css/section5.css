@@ -2,11 +2,12 @@
     width: 100%;
     height: 100vh;
     background-image: url("../images/draveronicaadvogada.png");
-    background-size: cover; /* Faz com que a imagem cubra todo o espaço disponível */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
-    background-position: right center; /* Mantém o lado direito da imagem fixo e centraliza verticalmente */
-    background-attachment: local;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top right; /* Alinha o topo da imagem com o topo do elemento */
+    background-attachment: fixed;
 }
+
 
 .section_5_text_holder {
     width: 100%;

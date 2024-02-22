@@ -106,6 +106,7 @@
     .image_map_section_9 {
         display: block;
         max-width: 650px;
+        max-height: 599px;
     }
 
     .image_map_section_9 img{
@@ -121,7 +122,7 @@
     }
 
     .section_9_holder {
-        padding: 90px 0;
+        padding: 90px 0 93px 0;
     }
 
     .map_view_mobile {

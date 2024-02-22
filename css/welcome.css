@@ -71,6 +71,7 @@
     transition: all 0.1s ease-in-out;
 }
 
+
 .contact_whatsapp_button:hover{
     color: var(--default_green_color);
     background-color: var(--default_medium_green_color);
@@ -186,12 +187,20 @@ s
     font-size: 30px;
 }
 
-.horizontal_item {
+.icon_and_text_serv_holder {
     position: relative;
     cursor: pointer; /* Para indicar que é clicável */
 }
 
-.horizontal_item::after {
+.icon_and_text_serv_holder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+
+.icon_and_text_serv_holder::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -204,12 +213,12 @@ s
     transition: transform 0.25s ease-out;
 }
 
-.horizontal_item:hover::after {
+.icon_and_text_serv_holder:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
-.horizontal_item.selected::after {
+.icon_and_text_serv_holder.selected::after {
     transform: scaleX(1); /* Garante que o traço é sempre visível */
     height: 4px; /* Torna o traço mais grosso */
     background-color: var(--default_green_color); /* Ou qualquer cor que você queira para o item selecionado */

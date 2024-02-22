@@ -25,13 +25,33 @@ function showSection(id) {
     hideAllSections();
     document.getElementById(id).style.display = 'block';
     markSectionAsSelected(id + 'Class'); // Adiciona 'Button' ao ID para marcar o botão como selecionado
+
+
     AOS.init();
     AOS.refresh();
 }
 
+const elements = document.querySelectorAll('.icon_and_text_serv_holder');
+
+
+elements.forEach(element => {
+    element.addEventListener('click', handleClick);
+});
+
+function handleClick(event) {
+    var section = document.querySelector('.scroll_here');
+    var offset = 120; // Espaçamento do topo, ajuste conforme necessário
+    var sectionTop = section.offsetTop - offset;
+
+    // Faça o scroll suavemente até a seção
+    window.scrollTo({ top: sectionTop, behavior: "smooth" });
+    
+}
+
+
 function markSectionAsSelected(selectedButtonClass) {
     // Remove a classe 'selected' de todos os itens
-    document.querySelectorAll('.horizontal_item').forEach(function(item) {
+    document.querySelectorAll('.icon_and_text_serv_holder').forEach(function(item) {
         item.classList.remove('selected');
     });
     // Adiciona a classe 'selected' ao(s) item(ns) clicado(s)
