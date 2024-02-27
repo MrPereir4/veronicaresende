@@ -11,6 +11,8 @@ window.onload = function() {
         document.getElementById(section).style.display = 'block';
         markSectionAsSelected(section + 'Class');
     }
+
+    handleClick();
 };
 
 function hideAllSections() {
@@ -25,7 +27,6 @@ function showSection(id) {
     hideAllSections();
     document.getElementById(id).style.display = 'block';
     markSectionAsSelected(id + 'Class'); // Adiciona 'Button' ao ID para marcar o botão como selecionado
-
 
     AOS.init();
     AOS.refresh();

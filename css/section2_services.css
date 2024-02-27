@@ -9,3 +9,12 @@
     margin-top: 32px;
 }
 
+.hide_header {
+    visibility: visible;
+}
+
+@media (min-width: 900px) {
+    .hide_header {
+        visibility: hidden;
+    }
+}
